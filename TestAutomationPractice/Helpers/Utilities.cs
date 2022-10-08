@@ -44,7 +44,8 @@ namespace TestAutomationPractise.Helpers
 
         public string ReturnTextFromElement(By locator)
         {
-            return driver.FindElement(locator).Text;
+            //return driver.FindElement(locator).Text;
+            return driver.FindElement(locator).GetAttribute("textContent");
         }
     }
 }

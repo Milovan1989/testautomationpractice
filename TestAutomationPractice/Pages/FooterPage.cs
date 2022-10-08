@@ -9,6 +9,7 @@ namespace TestAutomationPractise.Pages
     class FooterPage
     {
         readonly IWebDriver driver;
+
         public By footer = By.ClassName("footer-container");
         public FooterPage(IWebDriver driver)
         {

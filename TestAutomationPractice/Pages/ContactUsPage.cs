@@ -10,7 +10,7 @@ namespace TestAutomationPractise.Pages
     {
         readonly IWebDriver driver;
 
-        public By contactPage = By.Id("contact");
+        public By contactUs = By.Id("contact-link");
         public By subjectHeading = By.Id("id_contact");
         public By contactEmail = By.Id("email");
         public By message = By.Id("message");
@@ -21,7 +21,7 @@ namespace TestAutomationPractise.Pages
         {
             this.driver = driver;
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(contactPage));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(contactUs));
         }
     }
 }
