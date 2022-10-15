@@ -1,18 +1,18 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace TestAutomationPractise.Pages
+namespace TestAutomationPractice.Pages
 {
     class HomePage
     {
         readonly IWebDriver driver;
-        public By homepage = By.Id("Index");
-        public By contacUs = By.Id("contact-link");
+        public By homepage = By.Id("index");
+        public By contactUs = By.Id("contact-link");
         public By searchField = By.Id("search_query_top");
         public By searchBtn = By.Name("submit_search");
+        public By signin = By.ClassName("login");
+        public By submitSignIn = By.Id("SubmitLogin");
 
         public HomePage(IWebDriver driver)
         {

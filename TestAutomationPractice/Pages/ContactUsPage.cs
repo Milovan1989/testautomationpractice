@@ -1,27 +1,24 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace TestAutomationPractise.Pages
+namespace TestAutomationPractice.Pages
 {
-    class ContactUsPage
+    public class ContactUsPage
     {
         readonly IWebDriver driver;
-
-        public By contactUs = By.Id("contact-link");
+        public By contactPage = By.Id("contact");
         public By subjectHeading = By.Id("id_contact");
         public By contactEmail = By.Id("email");
         public By message = By.Id("message");
-        public By sendBtn = By.Id("submitMessage");
+        public By sendbtn = By.Id("submitMessage");
         public By successMessage = By.ClassName("alert-success");
 
         public ContactUsPage(IWebDriver driver)
         {
             this.driver = driver;
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(contactUs));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(contactPage));
         }
     }
 }

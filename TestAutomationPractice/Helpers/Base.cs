@@ -1,11 +1,9 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using TechTalk.SpecFlow;
 
-namespace TestAutomationPractise.Helpers
+namespace TestAutomationPractice.Helpers
 {
     [Binding]
     public class Base
@@ -17,7 +15,7 @@ namespace TestAutomationPractise.Helpers
         {
             Driver = new ChromeDriver();
             Driver.Manage().Window.Maximize();
-            var url = "http://automationpractice.com";
+            var url = "http://automationpractice.com/";
             Driver.Url = url;
         }
 

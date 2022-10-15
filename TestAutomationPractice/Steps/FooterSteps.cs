@@ -1,10 +1,11 @@
-﻿using NUnit.Framework;
-using System;
+﻿using System;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
-using TestAutomationPractise.Helpers;
+using TestAutomationPractice.Helpers;
+using TestAutomationPractice.Pages;
 using TestAutomationPractise.Pages;
 
-namespace TestAutomationPractise.Steps
+namespace TestAutomationPractice.Steps
 {
     [Binding]
     public class FooterSteps : Base

@@ -35,8 +35,8 @@ namespace TestAutomationPractice.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "ContactUs", "In order to contact customer service\r\nAs a user\r\nI want to be able to use contact" +
-                    " us form", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "ContactUs", "\tIn order to contact customer service\r\n\tAs a user\r\n\tI want to be able to use cont" +
+                    "act us form", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -97,14 +97,14 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("user opens contact us page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 9
- testRunner.When("user fill in all required field \'Webmaster\' heading and \'QA kurs\' message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("user fill in all required fields with \'Webmaster\' heading and \'QA kurs\' message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 10
  testRunner.And("user submits the form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 11
- testRunner.Then("message \'Your message has been successfully sent to our team\' is presented to the" +
-                        " user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("message \'Your message has been successfully sent to our team.\' is presented to th" +
+                        "e user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

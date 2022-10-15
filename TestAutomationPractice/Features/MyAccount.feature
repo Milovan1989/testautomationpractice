@@ -1,9 +1,11 @@
 ﻿Feature: MyAccount
-	Simple calculator for adding two numbers
+	In order to menage personal information
+	As a user
+	I want to be able to use sign in functionality
 
 @mytag
-Scenario: Add two numbers
-	Given the first number is 50
-	And the second number is 80
-	When the two numbers are added
-	Then the result should be 120
+Scenario: User can sign in
+	Given user opens sign in page
+	And enters correct credentials
+	When user submits the login form
+	Then user will be logged in

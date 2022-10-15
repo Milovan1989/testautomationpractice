@@ -6,5 +6,5 @@
 @mytag
 Scenario: User can search for a term
 	Given user enters 'dress' search term
-	When user submit the search
-	Then results for 'search' term are displayed
+	When user submits the search
+	Then results for 'dress' search term are displayed

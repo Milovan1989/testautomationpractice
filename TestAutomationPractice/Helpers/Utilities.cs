@@ -1,10 +1,8 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace TestAutomationPractise.Helpers
+namespace TestAutomationPractice.Helpers
 {
     public class Utilities
     {
@@ -18,7 +16,7 @@ namespace TestAutomationPractise.Helpers
 
         public string GenerateRandomEmail()
         {
-            return string.Format("email{0}@mailnator.com", RandomName.Next(10000, 100000));
+            return string.Format("email{0}@malinator.com", RandomName.Next(10000, 1000000));
         }
 
         public void ClickOnElement(By locator)
@@ -27,13 +25,13 @@ namespace TestAutomationPractise.Helpers
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(locator)).Click();
         }
 
-        public void DropdownSelect(By select, string option)
+        public void DropDownSelect(By select, string option)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(select));
             var dropdown = driver.FindElement(select);
-            var selectElement = new SelectElement(dropdown);
-            selectElement.SelectByText(option);
+            var SelectElement = new SelectElement(dropdown);
+            SelectElement.SelectByText(option);
         }
 
         public void EnterTextInElement(By locator, string text)
@@ -44,8 +42,13 @@ namespace TestAutomationPractise.Helpers
 
         public string ReturnTextFromElement(By locator)
         {
-            //return driver.FindElement(locator).Text;
             return driver.FindElement(locator).GetAttribute("textContent");
+        }
+
+        public bool ElementExists(By locator)
+        {
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
+            return wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(locator)).Displayed;
         }
     }
 }

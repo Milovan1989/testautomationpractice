@@ -1,3 +1,7 @@
+C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.AssemblyInfo.cs
+C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.csproj.CoreCompileInputs.cache
 C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\bin\Debug\netcoreapp3.1\testhost.dll
 C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\bin\Debug\netcoreapp3.1\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
 C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\bin\Debug\netcoreapp3.1\testhost.exe
@@ -101,12 +105,8 @@ C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\bin\Deb
 C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.csproj.AssemblyReference.cache
-C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.AssemblyInfoInputs.cache
-C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.AssemblyInfo.cs
-C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.csproj.CoreCompileInputs.cache
 C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.csproj.CopyComplete
 C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.dll
 C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.pdb
 C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.genruntimeconfig.cache
+C:\Users\DELL\source\repos\TestAutomationPractice\TestAutomationPractice\obj\Debug\netcoreapp3.1\TestAutomationPractice.csproj.AssemblyReference.cache

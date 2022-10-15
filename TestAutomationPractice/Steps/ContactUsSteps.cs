@@ -1,10 +1,10 @@
-﻿using NUnit.Framework;
-using System;
+﻿using System;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
-using TestAutomationPractise.Helpers;
-using TestAutomationPractise.Pages;
+using TestAutomationPractice.Helpers;
+using TestAutomationPractice.Pages;
 
-namespace TestAutomationPractise.Steps
+namespace TestAutomationPractice.Steps
 {
     [Binding]
     public class ContactUsSteps : Base
@@ -15,14 +15,14 @@ namespace TestAutomationPractise.Steps
         [Given(@"user opens contact us page")]
         public void GivenUserOpensContactUsPage()
         {
-            ut.ClickOnElement(hp.contacUs);
+            ut.ClickOnElement(hp.contactUs);
         }
 
-        [When(@"user fill in all required field '(.*)' heading and '(.*)' message")]
-        public void WhenUserFillInAllRequiredFieldHeadingAndMessage(string heading, string message)
+        [When(@"user fill in all required fields with '(.*)' heading and '(.*)' message")]
+        public void WhenUserFillInAllRequiredFieldsWithHeadingAndMessage(string heading, string message)
         {
             ContactUsPage cup = new ContactUsPage(Driver);
-            ut.DropdownSelect(cup.subjectHeading, heading);
+            ut.DropDownSelect(cup.subjectHeading, heading);
             ut.EnterTextInElement(cup.contactEmail, ut.GenerateRandomEmail());
             ut.EnterTextInElement(cup.message, message);
         }
@@ -31,14 +31,14 @@ namespace TestAutomationPractise.Steps
         public void WhenUserSubmitsTheForm()
         {
             ContactUsPage cup = new ContactUsPage(Driver);
-            ut.ClickOnElement(cup.sendBtn);
+            ut.ClickOnElement(cup.sendbtn);
         }
 
         [Then(@"message '(.*)' is presented to the user")]
-        public void ThenMessageIsPresentedToTheUser(string successsMessage)
+        public void ThenMessageIsPresentedToTheUser(string successMessage)
         {
             ContactUsPage cup = new ContactUsPage(Driver);
-            Assert.That(ut.ReturnTextFromElement(cup.successMessage), Is.EqualTo(successsMessage), "Message was not sent to customer service");
+            Assert.That(ut.ReturnTextFromElement(cup.successMessage), Is.EqualTo(successMessage), "Message was not sent to customer service");
         }
     }
 }
