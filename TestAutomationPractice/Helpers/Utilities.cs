@@ -31,6 +31,7 @@ namespace TestAutomationPractice.Helpers
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(select));
             var dropdown = driver.FindElement(select);
             var SelectElement = new SelectElement(dropdown);
+            //Thread.Sleep(2000);
             SelectElement.SelectByText(option);
         }
 
@@ -45,10 +46,18 @@ namespace TestAutomationPractice.Helpers
             return driver.FindElement(locator).GetAttribute("textContent");
         }
 
-        public bool ElementExists(By locator)
+        public bool ElementIsDisplayed(By locator)
         {
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
             return wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(locator)).Displayed;
         }
+
+        public bool TextPresentInElement(string text)
+        {
+            By textElement = By.XPath("//*[contains(text(),'" + text + "')]");
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
+            return wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(textElement)).Displayed;
+        }
+
     }
 }

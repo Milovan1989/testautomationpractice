@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
@@ -19,6 +20,13 @@ namespace TestAutomationPractice.Pages
             this.driver = driver;
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(homepage));
+        }
+
+        public IList<IWebElement> ReturnCategoryList(string catName)
+        {
+            By catOption = By.CssSelector(".sf-menu [title='" + catName + "']");
+            IList<IWebElement> category = driver.FindElements(catOption);
+            return category;
         }
     }
 }
